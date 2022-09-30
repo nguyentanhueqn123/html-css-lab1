@@ -1,0 +1,44 @@
+body{
+  background: #fff;
+  padding: 2rem 9%;
+  line-height: 2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+    position: relative;
+}
+
+.box .title-main{
+    text-transform: uppercase;
+    color: rgb(78, 101, 234);
+}
+
+.box a{
+  text-decoration: none;
+  color: rgb(78, 101, 234);
+}
+
+.box .more{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: rgb(78, 101, 234);
+}
+
+.fa-angle-right{
+    padding-right: 0.5rem;
+    color: red;
+}
+
+.fa-angles-right{
+    padding-left: 0.5rem;
+    color: rgb(78, 101, 234);
+
+}

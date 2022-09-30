@@ -1,0 +1,40 @@
+body{
+    display: block;
+    /* justify-content: left; */
+    width: auto;
+}
+section{
+    display: flex;
+    justify-content: left;
+}
+div{
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
+    background: #eeeff2;
+    border-top: none;
+    text-align: left;
+    padding: 10px;
+    border-left: 10px dotted #D0D0FF;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+div:nth-child(odd){
+    background: #eeeff2;
+}
+
+div:hover{
+    background: yellow;
+}
+.boxF{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 150px;
+    background: #eeeff2;
+    border: none;
+    border-left: 10px dotted #D0D0FF;
+
+}
