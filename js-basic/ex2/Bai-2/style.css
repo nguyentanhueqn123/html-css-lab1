@@ -32,9 +32,9 @@ a{
 section{
     padding: 2rem 10%;
 }
-section:nth-child(even){
+/* section:nth-child(even){
     background: #eee;
-}
+} */
 
 h1, h2{
   color: #0E55C1;
@@ -175,4 +175,8 @@ h1:hover{
 .btn-github:hover{
   background: rgb(155, 234, 36);
 
+}
+.btn-click-change{
+  padding: 10px 20px;
+  cursor: pointer;
 }
