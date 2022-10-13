@@ -42,4 +42,9 @@ section{
     border: 0.5rem solid #414C6A;
     cursor: pointer;
 }
+.guide{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
 
