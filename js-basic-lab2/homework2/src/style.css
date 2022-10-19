@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+body{
+    background: #2A3249;
+    font-family: 'Roboto Slab', serif;
+    font-size: 5.2rem;
+    padding: 1.5rem 5%;  
+      
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+    margin-bottom: 5rem;
+    
+   
+    
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.title-container > img{
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1.2rem;
+}
+.title-container > span{
+    color: #ccc;
+    text-shadow: #D80662 0.2rem 0 0.2rem;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1rem;
+    
+}
+.box-container img{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 1rem;
+    border: 0.5rem solid #414C6A;
+    cursor: pointer;
+}
+.guide{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Piano  */
+.contain-piano{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.piano {
+    display: flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0.5rem solid #414C6A;
+
+}
+  
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    color: #D80662;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+  
+.white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+}
+  
+.white.active {
+    background-color: #CCC;
+}
+  
+.black {
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+}
+  
+.black.active {
+    background-color: #333;
+}

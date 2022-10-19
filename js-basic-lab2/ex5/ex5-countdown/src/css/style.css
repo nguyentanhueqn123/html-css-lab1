@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+body {
+  background: #ccc;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  font-size: 1.2rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.title-head {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.title-head > h1 {
+  font-size: 3em;
+  letter-spacing: 0.16em;
+}
+.num-sec{
+  color: rgb(189, 31, 31);
+}
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1rem;
+  border: 2px solid #fff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.num {
+  /* background-color: var(--color-glass); */
+  /* backdrop-filter: blur(12px); */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 6rem;
+}
+.text {
+  background-color: #fff;
+  color: #333;
+  font-size: 1em;
+  padding: 0.2rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: var(--color-shadow);
+}
+
+.footer{
+  position: fixed;
+  text-align: center;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background: #ccc;
+  color: #333;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}

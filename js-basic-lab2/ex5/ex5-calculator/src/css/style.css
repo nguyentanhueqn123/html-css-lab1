@@ -1,0 +1,89 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    background: #2f363e;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25), 
+    inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.calculator-grid {
+    position: absolute;
+    display: grid;
+    /* justify-content: center; */
+    /* align-content: center; */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+  
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px, solid #fff;
+    outline: none;
+    background-color: rbga(255, 255, 255, 0.75);
+    border-radius: 50%;
+    margin: 0.3rem;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25), 
+    inset 5px 5px 10px rgba(213, 213, 213, 0.25),
+    inset 5px 5px 20px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.calculator-grid > button:hover {
+    background-color: #ccc;
+    color: #ff5500;
+}
+.span-two {
+    grid-column: span 2;
+    border-radius: 1rem !important;
+    color: #fff;
+    background-color: #ff5500;
+} 
+        
+.output{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+}  
+       
+.output .previous-operand{
+    color: rgba(255,255, 255, 0.75);
+    font-size: 1.5rem;
+}
+  
+.output .current-operand{
+    color: white;
+    font-size: 2.5rem;
+}
